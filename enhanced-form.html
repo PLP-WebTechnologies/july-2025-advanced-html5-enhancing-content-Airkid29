@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <meta name="description" content="An assignment demonstrating the use of advanced HTML5 content, media, and a complete, validated form.">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <header>
+        <h1>Our Product Showcase & Customer Form</h1>
+        <p>Explore our products and share your feedback with our easy-to-use form.</p>
+    </header>
+
+    <main>
+        <section id="product-showcase">
+            <h2>Featured Products</h2>
+            <p>We take pride in our curated selection of high-quality goods. Here are a few examples.</p>
+            
+            <article>
+                <h3>Handcrafted Coffee Blends</h3>
+                <p>Our coffee is sourced from sustainable farms and roasted in small batches.</p>
+                <figure>
+                    <img src="https://via.placeholder.com/600x400?text=Coffee+Beans" alt="A bag of freshly roasted coffee beans." style="width:100%; max-width:600px; height:auto;">
+                    <figcaption>Our Signature Coffee Blend</figcaption>
+                </figure>
+                <h4>Roast Levels</h4>
+                <ul>
+                    <li>Light Roast: Bright and fruity notes.</li>
+                    <li>Medium Roast: Balanced and aromatic.</li>
+                    <li>Dark Roast: Bold and smoky flavor.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Customer Testimonials</h3>
+                <p>Don't just take our word for it. Listen to what our customers have to say!</p>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <article>
+                <h3>Pricing & Availability</h3>
+                <p>Here is a detailed breakdown of our current offerings.</p>
+                <table>
+                    <caption>Product Price List</caption>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>In Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coffee Blend A</td>
+                            <td>12oz</td>
+                            <td>$15.00</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Coffee Blend B</td>
+                            <td>12oz</td>
+                            <td>$16.50</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Coffee Blend C</td>
+                            <td>16oz</td>
+                            <td>$20.00</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="customer-form">
+            <h2>Customer Feedback Form</h2>
+            <p>Please fill out this form to help us improve our products and services. All fields are required unless otherwise noted.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="full_name" placeholder="John Doe" required autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email_address" placeholder="johndoe@example.com" required autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number (optional):</label>
+                        <input type="tel" id="phone" name="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <small>Format: 123-456-7890</small>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    <p>
+                        <label for="product">Which product are you reviewing?</label>
+                        <select id="product" name="product_reviewed" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="blend_a">Coffee Blend A</option>
+                            <option value="blend_b">Coffee Blend B</option>
+                            <option value="blend_c">Coffee Blend C</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="rating">Rate your experience (1-10):</label>
+                        <input type="number" id="rating" name="experience_rating" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="feedback">Your Feedback:</label>
+                        <textarea id="feedback" name="customer_feedback" rows="5" minlength="10" required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Submit Your Form</legend>
+                    <p>
+                        <input type="submit" value="Submit Feedback">
+                        <input type="reset" value="Clear Form">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
